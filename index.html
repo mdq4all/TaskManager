@@ -1,0 +1,51 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Firebase</title>
+</head>
+<body class="bg-dark">
+    <div class="container p-4">
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Add Task</h1>
+                        <form id="task-form">
+                            <div id="user-info"></div>
+                            <input type="text"
+                                    id="todo-input"
+                                    placeholder="Nuevo todo..."
+                                    autocomplete="off"
+                                    class="form-control mb-3">
+                            <label for="description">Descripcion</label>
+                            <textarea name="description" 
+                                      id="task-description" 
+                                      rows="5"
+                                      class="form-control mb-3"></textarea>
+                            <button type="submit" 
+                                    id="btn-task-save" 
+                                    class="btn btn-primary ">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="task-container" class="col-md-6 animate__animated animate__backInDown"></div>
+        </div>
+    </div>
+   
+  
+
+   
+    <script src="app.js" type="module"></script>
+</body>
+</html>
